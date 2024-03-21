@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AspNet_WebApi_Versioning;
 
 [ApiController]
-[ApiVersion(1)]
+[ApiVersion(1, Deprecated = true)]
 [ApiVersion(2)]
 [Route("api/v{version:apiVersion}/[controller]")]
 public class EmployeesController : ControllerBase
